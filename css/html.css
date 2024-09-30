@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "LINESeedKR-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/wizfile/font/LINESeedKR-Rg.eot");
+  src: url("https://cdn.jsdelivr.net/gh/wizfile/font/LINESeedKR-Rg.woff") format("woff");
+  font-style: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+html, html * {
+  font-weight: 300;
+  font-family: "LINESeedKR-Rg", "LINESeedKR-Bd";
+  color: #222;
+}
+
+body {
+  line-height: 1.4;
+}
+body h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: red;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: #222;
+  color: #fff;
+  border: 0;
+}
+button:hover {
+  background-color: tomato;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 900;
+}/*# sourceMappingURL=html.css.map */

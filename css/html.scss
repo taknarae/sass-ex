@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+//변수선언
+$primary-bk1 : #222;
+$primary-bk2 : #666;
+$primary-bg : #f9f9f9;
+
+//폰트설정
+@font-face {
+  font-family: 'LINESeedKR-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/wizfile/font/LINESeedKR-Rg.eot');
+  src:url('https://cdn.jsdelivr.net/gh/wizfile/font/LINESeedKR-Rg.woff') format('woff');
+  font-style: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+// 정의
+@mixin my-font {
+  color:red;
+}
+@mixin your-font($font-color,$bg-color){
+  font-size:18px;
+  font-weight:900;
+}
+
+// & : 상위선택자(상속)
+html, html * { font-weight:300; font-family:'LINESeedKR-Rg','LINESeedKR-Bd'; color:$primary-bk1; }
+body {
+  line-height:1.4;
+  h1 {
+    font-size:26px;
+    font-weight:700;
+    @include my-font;
+  }
+}
+button{
+  padding:6px 12px;
+  background-color:#222;
+  color:#fff;
+  border:0;
+  &:hover {
+    background-color:tomato;
+  }
+}
+p {
+  @include your-font(blue,yellow);
+}
+
+
